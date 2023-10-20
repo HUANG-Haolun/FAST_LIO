@@ -43,6 +43,9 @@ def generate_launch_description():
         executable='fastlio_mapping',
         parameters=[config_path,
                     {'use_sim_time': use_sim_time}],
+        remappings=[
+            ('/Odometry', '/mid360_odometry'),
+        ],
         output='screen'
     )
     rviz_node = Node(

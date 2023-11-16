@@ -38,7 +38,9 @@ Visualization Manager:
         All Enabled: true
         body:
           Value: true
-        camera_init:
+        livox:
+          Value: true
+        world:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -46,9 +48,10 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        camera_init:
-          body:
-            {}
+        world:
+          livox:
+            body:
+              {}
       Update Interval: 0
       Value: true
     - Angle Tolerance: 0.10000000149011612
@@ -189,8 +192,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.9068307876586914
-        Min Value: -1.2498570680618286
+        Max Value: 3.900432825088501
+        Min Value: -2.0695343017578125
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -261,7 +264,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
-    Fixed Frame: camera_init
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -304,7 +307,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.626340389251709
+      Distance: 16.58451271057129
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -319,10 +322,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9047969579696655
+      Pitch: 0.6747971773147583
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 4.943561553955078
+      Yaw: 4.61855411529541
     Saved: ~
 Window Geometry:
   Displays:

@@ -622,6 +622,13 @@ void set_posestamp(T & out)
     out.pose.orientation.y = geoQuat.y;
     out.pose.orientation.z = geoQuat.z;
     out.pose.orientation.w = geoQuat.w;
+
+    // tf2::Quaternion q(geoQuat.x, geoQuat.y, geoQuat.z, geoQuat.w);
+    // tf2::Quaternion rotateNinety;
+    // rotateNinety.setRPY(0, 0, 1.571);
+    // q = rotateNinety * q;
+    // out.pose.orientation = tf2::toMsg(q.normalize());
+
     
 }
 
